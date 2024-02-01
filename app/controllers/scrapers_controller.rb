@@ -10,7 +10,7 @@ class ScrapersController < ApplicationController
         render json: query_result.first.to_json, status: :ok
       end
     rescue
-      render json: { error: "Erro interno no servidor" }, status: :internal_server_error
+      render json: { error: "Internal server error" }, status: :internal_server_error
     end
   end
 
@@ -20,14 +20,14 @@ class ScrapersController < ApplicationController
       result = scraper_service.get_web_data(params[:url])
       
       @scraper = Scraper.new(result)
-          if @scraper.save
-            if !old_scraper.empty?
-              Scraper.find(old_scraper.first.id).destroy
-            end
-            render json:@scraper , status: :ok  
-          else
-            render json: { error: "It was not possible to collect this data" }, status: :unprocessable_entity
-          end   
+        if @scraper.save
+          if !old_scraper.empty?
+            Scraper.find(old_scraper.first.id).destroy
+          end
+          render json:@scraper , status: :ok  
+        else
+          render json: { error: "It was not possible to collect this data" }, status: :unprocessable_entity
+        end   
     rescue
       render json: { error: "Erro interno no servidor" }, status: :internal_server_error
     end
