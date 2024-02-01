@@ -19,7 +19,7 @@ gem 'puma', '~> 5.0'
 
 gem 'tzinfo-data'
 
-gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+gem 'rspec-rails', '~> 3.9.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
