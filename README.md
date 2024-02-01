@@ -13,7 +13,6 @@
 <p align="center">
   <a href="#dart-sobre">About</a> &#xa0; | &#xa0; 
   <a href="#rocket-tecnologias">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-pré-requisitos">Preconditions</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-começando">Getting Started</a> &#xa0; | &#xa0;
   <a href="#memo-licença">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/EduardoJesusx" target="_blank">Author</a>
@@ -21,11 +20,11 @@
 
 <br>
 
-## :dart: Sobre ##
+## :dart: About ##
 
 This is a project requested by Speedio, project is based on creating a web scraper using Ruby on Rails to gather data from SimilarWeb and store it in records in MongoDB.
 
-## :rocket: Tecnologias ##
+## :rocket: Technologies ##
 
 The following tools were used in the construction of the project:
 
@@ -33,7 +32,7 @@ The following tools were used in the construction of the project:
 - [Mongodb](https://www.mongodb.com/)
 - [Docker](https://www.docker.com/products/docker-desktop)
 
-## :checkered_flag: Começando ##
+## :checkered_flag: Getting Started ##
 
 Clone the project into your local folder.
 
@@ -67,7 +66,7 @@ Access the application:
 
 *Note: To be able to use the application, it is necessary to modify the access key to the database in the Atlas service.*
 
-## :memo: Licença ##
+## :memo: License ##
 
 This project is under the MIT license. See the file. [MIT](https://opensource.org/license/mit/) for more details.
 
