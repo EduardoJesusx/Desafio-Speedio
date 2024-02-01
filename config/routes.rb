@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :scrapers
+
+  post '/save_info', to: 'scrapers#save_info', defaults: { format: :json }
+  get '/get_info', to: 'scrapers#get_info', defaults: { format: :json }
 end
